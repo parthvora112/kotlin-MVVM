@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.firebase_chat.edit_profile.EditProfileFragment">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/img_user_placeholder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintTop_toBottomOf="@id/iv_profile"
+        android:hint="@string/form_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/form_btn_submit"
+        android:layout_marginTop="10dip"
+        app:layout_constraintTop_toBottomOf="@id/tl_user_name"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginEnd="10dip"
+        app:layout_constraintEnd_toStartOf="@id/btn_submit"
+        app:layout_constraintTop_toTopOf="@id/btn_submit"
+        app:layout_constraintBottom_toBottomOf="@id/btn_submit" />
+
+    <!--Guide line-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        app:layout_constraintGuide_begin="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        app:layout_constraintGuide_end="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

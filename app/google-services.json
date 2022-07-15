@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "285195062752",
+    "project_id": "androidapparchitecture",
+    "storage_bucket": "androidapparchitecture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285195062752:android:c6dc4071a888b0f419af85",
+        "android_client_info": {
+          "package_name": "com.teco.apparchitecture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285195062752-vftr1v6k1h6m02fj5hk3lbcqibnsesuk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teco.apparchitecture",
+            "certificate_hash": "33c228ab5cc4bbaea1a46d3ad403b35a92c9ae2a"
+          }
+        },
+        {
+          "client_id": "285195062752-onhe5f5r9ruba5of1c1iet3585mgkhd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpmYd-PTXV-WKSmafrgzPAhD61fG851L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285195062752-onhe5f5r9ruba5of1c1iet3585mgkhd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
